@@ -1,32 +1,52 @@
 ---
-title: "Home"
+title: "Moses Stewart"
 layout: homelay
+classes: wide
 sitemap: false
 permalink: /
 ---
 
-### Welcome!
+### About Me
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
-It also helps us to understand the fundamental principles that govern the behavior of matter and energy, and to explore the limits of our current knowledge.
-Theoretical physics helps us to make progress in a wide range of fields, including cosmology, particle physics, and quantum mechanics, and it has led to many important discoveries and technological innovations.
+<br>
 
-<div class="container">
-<div class="row">
-<center>
-<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" width="100%"/><br/>
-Examples of Feynman diagrams. <br/>
-Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
-</center>
-</div>
-</div>
+I am an undergraduate student at Harvard University living in Cambridge, Massachusetts. I currently
+work as a research assistant for [Rahul Singh](https://www.economics.harvard.edu/people/rahul-singh). 
+I will start a PhD in Economics at \[Undecided\] in Fall of 2025.
+
+As a college student, I am pursuing an BA degree in Honors Statistics with an expected graduation
+date of May 2025. From 2022-2024, I spent two years working closely with
+[Jesse Shapiro](https://scholar.harvard.edu/shapiro/home) and [Isaiah Andrews](https://economics.mit.edu/people/faculty/isaiah-andrews)
+as a research assistent.
+
+
+**Research interests:** My undergraduate research focused on causal inference under misspecified models in Economics. 
+Currently my research is centered around nonparametric causal inference and identification. I hope to continue
+this theme in my graduate studies.
+
+**Contact me:** mosesstewart \[at\] college \[dot\] harvard \[dot\] edu
+
 <br/>
 
-### About me
+### Work Experiences
 
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+<div class='jumbotron'>
+{% for member in site.data.work %}
+<ul>
+    <li>
+      {{ member.role }} at <b>{{ member.company }}</b> ({{ member.yearStart }} - {{ member.yearEnd }})
+    </li>
+</ul>
+{% endfor %}
+</div>
+
+<br/>
+
+### Working Papers
+
+<div class="jumbotron">
+{% bibliography --query @inproceedings %}
+</div>
+
+<br/>
+

@@ -1,7 +1,7 @@
 # Site settings
-title: Richard Feynman
-email: richard@university.edu
-description: Academic webpage of Dr. Richard Feynman
+title: Moses Stewart
+email: mosesstewart [at] college [dot] harvard [dot] edu
+description: Academic webpage for Moses Stewart
 baseurl: ""
 url: ""
 
@@ -12,29 +12,21 @@ url: ""
 
 # Footer info
 affiliation: >
-  Richard Feynman<br/>
-  Professor of Physics<br/>
-  California Institute of Technology
+  Moses Stewart<br/>
+  PhD Candidate in Economics<br/>
+  Undecided
 
-location: >
-  California Institute of Technology<br/>
-  1200 E California Blvd<br/>
-  Pasadena, CA 91125
+#location: >
+#  Harvard University<br/>
+#  511 Adams Mail Center<br/>
+#  Cambridge, MA 02138
 
 contact: >
-  <a href="mailto:richard@university.edu" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Richard via email</a> <br/>
-  <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa fa-github fa-1x"></i> Use this site as a template!</a>
+  <a href="https://github.com/MosesStewart"><i class="fa fa-github fa-1x"></i> My Github profile</a>
 
 # Pages shown in navbar
 nav_pages:
-  - name: about
-  - name: publications
-  - name: talks
   - name: research
-  - name: software
-  - name: team
-  - name: teaching
-  - name: blogs
 
 include:
   - .htaccess
@@ -47,7 +39,6 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -62,8 +53,8 @@ kramdown:
 plugins: ["jekyll/scholar"]
 
 scholar:
-  last_name: Doe
-  first_name: [John]
+  last_name: Stewart
+  first_name: [Moses]
 
   style: citesty
   locale: en
@@ -71,6 +62,8 @@ scholar:
   source: /assets/
   bibliography: ref.bib
   bibliography_template: bibtemplate
+  bibliography_list_tag: "ul"
+  bibliography_item_tag: "li"
   sort_by: year, month
   order: descending
 
@@ -83,8 +76,6 @@ scholar:
 
   query: "@*"
 
-  bibliography_list_attributes:
-    reversed: "reversed"
 
 exclude:
   - Gemfile
