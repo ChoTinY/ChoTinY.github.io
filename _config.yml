@@ -2,8 +2,8 @@
 title: Moses Stewart
 email: mosesstewart [at] college [dot] harvard [dot] edu
 description: Academic webpage for Moses Stewart
-baseurl: ""
-url: ""
+baseurl:  "https://MosesStewart.github.io"
+url: "https://MosesStewart.github.io"
 
 # Google analytics ID: Uncomment and your own, if you like
 # google_analytics: XX
