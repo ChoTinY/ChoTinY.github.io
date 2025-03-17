@@ -22,11 +22,12 @@ pre{
 }
 </style>
 
-
-<div class="text-justify">{{reference}}</div>
-
+<!-- <div class="text-justify">{{reference}}</div> -->
+<div class="text-justify">
 <!-- You can use the below to make your name bold -->
-{{reference | replace_first: 'Stewart, M.', '<b>Stewart, M.</b>' | replace_first: 'Stewart, M. L.', '<b>Stewart, M. L.</b>' }}</div>
+<!-- {{reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' | replace_first: 'Bryngelson, S.', '<b>Bryngelson, S.</b>' }}</div> -->
+    {{reference | replace_first: 'Stewart, M.', '<b>Stewart, M.</b>' }}
+</div>
 
 {% assign bibtest = false %}
 {% if entry.file %}
@@ -42,6 +43,10 @@ pre{
 <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
 {% endif %}
 
+{% if entry.arxiv %}
+<a href="{{ entry.arxiv | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
+{% endif %}
+
 {% if entry.doi %}
 {% if entry.type == 'unpublished' %}
 <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
@@ -52,6 +57,10 @@ pre{
 
 {% if entry.type == 'unpublished' or entry.type == 'article' or  entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
 <button class="btn btn-danger btm-sm"  onclick="toggleBibtex{{entry.key}}()">BIB</button>
+{% endif %}
+
+{% if entry.video %}
+<a href="{{ entry.video }}" target="_blank"><button class="btn btn-warning btm-sm">VIDEO</button></a>
 {% endif %}
 
 {% if entry.abstract %}
@@ -66,6 +75,10 @@ pre{
 <div id="a{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
 <pre>{{ entry.bibtex }}</pre>
 </div>
+{% endif %}
+
+{% if entry.type == 'tutorial' %}
+<a href="{{ site.url }}{{ site.baseurl }}/{{ entry.website }}"><button class="btn btn-primary btm-sm">TUTORIAL WEBPAGE</button></a>
 {% endif %}
 
 <div id="b{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">

@@ -18,4 +18,5 @@ permalink: /research/
 
 <div class="jumbotron">
 ### Working Papers
+{% bibliography --query @inproceedings %}
 </div>
