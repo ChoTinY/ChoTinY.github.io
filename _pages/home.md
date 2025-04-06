@@ -12,7 +12,7 @@ permalink: /
 
 I am an undergraduate student at Harvard University living in Cambridge, Massachusetts. I currently
 work as a research assistant for [Rahul Singh](https://www.economics.harvard.edu/people/rahul-singh). 
-I will start a PhD in Economics at \[Undecided\] in Fall of 2025.
+I will start a PhD in Economics at Harvard University in Fall of 2025.
 
 As a college student, I am pursuing an BA degree in Honors Statistics with an expected graduation
 date of May 2025. From 2022-2024, I spent two years working closely with
