@@ -6,7 +6,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Make input lower case
-theme=$(echo "$1" | tr '[:upper:]' '[:lower:]')
+theme=$(echo "simplex" | tr '[:upper:]' '[:lower:]')
 url="https://bootswatch.com/4/simplex/bootstrap.css" # simplex
 
 if ! command -v curl &> /dev/null
