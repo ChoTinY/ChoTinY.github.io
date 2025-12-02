@@ -7,7 +7,7 @@ fi
 
 # Make input lower casetheme
 theme=$(echo "$1" | tr '[:upper:]' '[:lower:]')
-url="https://bootswatch.com/5/simplex/bootstrap.css" # simplex
+url="https://bootswatch.com/5/cerulean/bootstrap.css"
 
 if ! command -v curl &> /dev/null
 then
