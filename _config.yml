@@ -32,7 +32,6 @@ include:
   - .htaccess
   - _pages
   - switch_theme.sh
-  - update_boostrap.sh
 
 
 # Conversion
@@ -85,3 +84,5 @@ exclude:
   - Gemfile.lock
   - tags
   - Rakefile
+  - update_boostrap.sh
+
