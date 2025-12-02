@@ -38,6 +38,8 @@ jobs:
         with:
           ruby-version: '3.3' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Install dependencies
+        run: bundle install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
