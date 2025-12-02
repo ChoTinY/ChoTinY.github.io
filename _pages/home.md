@@ -45,9 +45,7 @@ this theme in my graduate studies.
 ### Working Papers
 
 <div class="jumbotron">
-    {% comment %}
 {% bibliography --query @inproceedings %}
-{% endcomment %}
 </div>
 
 
