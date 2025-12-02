@@ -5,8 +5,8 @@ if [ "$#" -ne 1 ]; then
     exit
 fi
 
-# Make input lower case
-theme=$(echo "simplex" | tr '[:upper:]' '[:lower:]')
+# Make input lower casetheme
+theme=$(echo "cerulean" | tr '[:upper:]' '[:lower:]')
 url="https://bootswatch.com/4/simplex/bootstrap.css" # simplex
 
 if ! command -v curl &> /dev/null
