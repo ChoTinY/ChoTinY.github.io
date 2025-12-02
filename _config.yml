@@ -31,6 +31,7 @@ nav_pages:
 include:
   - .htaccess
   - _pages
+  - switch_theme.sh
 
 # Conversion
 markdown: kramdown
@@ -81,6 +82,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - update_boostrap.sh
-  - switch_theme.sh
   - tags
   - Rakefile
