@@ -38,6 +38,10 @@ jobs:
         with:
           ruby-version: '3.3' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Swap Bootswatch theme to Cerulean
+        run: |
+          sed -i 's|https://bootswatch.com/5/.*/bootstrap.min.css|https://bootswatch.com/5/cerulean/bootstrap.min.css|' _includes/head.html
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
